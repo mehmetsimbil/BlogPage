@@ -1,0 +1,11 @@
+﻿@using Entities.Concrete
+@model List<Blog>
+@{
+    Layout = "_Layout";
+}
+@foreach (var item in Model)
+{
+    <p style="color:red">
+        @item.Detail
+    </p>
+}
