@@ -3,9 +3,46 @@
 @{
     Layout = "_Layout";
 }
-@foreach (var item in Model)
-{
-    <p style="color:red">
-        @item.Detail
-    </p>
-}
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">İD</th>
+                <th scope="col">Category İD</th>
+                <th scope="col">Title</th>
+                <th scope="col">Detail</th>
+                <th scope="col">Status</th>
+                <th scope="col">Created Time</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            @foreach (var item in Model){
+            <tr>
+        
+                    <th scope="row" style="color:red">
+                   @item.BlogId
+                   </th>
+                    <th scope="row" style="color:red">
+                        @item.CategoryId
+                    </th>
+                    <th scope="row" style="color:red">
+                        @item.Title
+                    </th>
+                    <th scope="row" style="color:red">
+                        @item.Detail
+                    </th>
+                    <th scope="row" style="color:red">
+                        @item.Status
+                    </th>
+                    <th scope="row" style="color:red">
+                        @item.CreatedTime
+                    </th>
+                
+            
+            </tr>}
+            </tbody>
+        </table>
+            
+       
+    

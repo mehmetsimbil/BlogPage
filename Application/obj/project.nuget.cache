@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sgQEB1CC8pk55y4+Q2uHFm97LTzEVGNOTrK5oQl7lWk2pm/HekThzN1w/hD8wXOcXED0nqK+DxUWET0+8FC78w==",
+  "dgSpecHash": "TfRM/oPgiOKpjxbvRSqk3yV5JyLILufLSBkk9Pw2Ztdpg+pGDI6jmPljGA/bCxDp3BDvNEqcDFY56GwtNl93Xg==",
   "success": true,
   "projectFilePath": "C:\\Users\\dell\\source\\repos\\BlogPage\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dell\\.nuget\\packages\\bootstrap\\5.3.2\\bootstrap.5.3.2.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
