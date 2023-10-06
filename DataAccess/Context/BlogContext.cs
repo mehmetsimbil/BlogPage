@@ -10,9 +10,9 @@ namespace DataAccess.Context
 {
     public class BlogContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public BlogContext(DbContextOptions<BlogContext> options)
+        : base(options)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost;Database=Blog;Trusted_Connection=True;");
         }
         public DbSet<Blog> Blog { get; set; }
         public DbSet<Category> Category { get; set; }

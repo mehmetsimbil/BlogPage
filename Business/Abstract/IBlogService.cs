@@ -9,6 +9,6 @@ namespace Business.Abstract
 {
     public interface IBlogService
     {
-        Task<List<Blog>> GetAllBlog();
+        Task<List<Blog>> GetAllBlogAsync();
     }
 }

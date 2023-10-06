@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    public interface IBlogDal
+    public interface IBlogDal:IRepository<Blog>
     {
-        Task<List<Blog>> GetAllBlog();
     }
 }

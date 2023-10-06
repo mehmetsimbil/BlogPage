@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DataAccess.Abstract;
+using DataAccess.Context;
+using Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete
 {
-    public class CategoryDal
+    public class CategoryDal : Repository<Category>, ICategoryDal
     {
+        public CategoryDal(BlogContext context) : base(context)
+        {
+        }
     }
 }

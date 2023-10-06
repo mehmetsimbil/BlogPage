@@ -15,13 +15,13 @@
                 <th scope="col">Created Time</th>
             </tr>
         </thead>
-        
+
         <tbody>
             @foreach (var item in Model){
             <tr>
-        
+
                     <th scope="row" style="color:red">
-                   @item.BlogId
+                   @item.Id
                    </th>
                     <th scope="row" style="color:red">
                         @item.CategoryId
@@ -38,11 +38,11 @@
                     <th scope="row" style="color:red">
                         @item.CreatedTime
                     </th>
-                
-            
+
+
             </tr>}
             </tbody>
         </table>
-            
-       
-    
+
+
+

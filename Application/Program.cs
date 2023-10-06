@@ -1,14 +1,22 @@
 using Business.Abstract;
 using Business.Concrete;
+using Business.Extensions;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
+using DataAccess.Context;
+using DataAccess.UnitOfWork;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<IBlogDal, BlogDal>();
-builder.Services.AddScoped<IBlogService, BlogManager>();
+builder.Services.AddDbContext<BlogContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BlogConnectionString")));
+builder.Services.AddServices(builder.Configuration);
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,6 +37,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Blog}/{action=Index}/{id?}");
 
 app.Run();

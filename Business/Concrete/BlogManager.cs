@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using DataAccess.Abstract;
+using DataAccess.UnitOfWork;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -11,14 +12,15 @@ namespace Business.Concrete
 {
     public class BlogManager : IBlogService
     {
-        private readonly IBlogDal _blogService;
-        public BlogManager(IBlogDal blogDal)
+        private readonly IUnitOfWork _unitOfWork ;
+        public BlogManager(IUnitOfWork unitOfWork)
         {
-            _blogService = blogDal;
+            _unitOfWork = unitOfWork;
         }
-        public async Task<List<Blog>> GetAllBlog()
+
+        public async Task<List<Blog>> GetAllBlogAsync()
         {
-            var result = await _blogService.GetAllBlog();
+            var result=await _unitOfWork.BlogDal.GetAllAsync();
             return result;
         }
     }

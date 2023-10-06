@@ -9,16 +9,10 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete
 {
-    public class BlogDal : IBlogDal
+    public class BlogDal : Repository<Blog>, IBlogDal
     {
-        public async Task<List<Blog>> GetAllBlog()
+        public BlogDal(BlogContext context) : base(context)
         {
-            var ListBlogs = new List<Blog>();
-            using (BlogContext context = new BlogContext())
-            {
-                ListBlogs = context.Blog.ToList();
-            }
-            return await Task.FromResult(ListBlogs);
         }
     }
 }

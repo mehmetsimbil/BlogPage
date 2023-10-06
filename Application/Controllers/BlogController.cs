@@ -12,7 +12,7 @@ namespace Application.Controllers
         }
         public async Task<ActionResult> Index()
         {
-            var result= await _blogService.GetAllBlog();
+            var result= await _blogService.GetAllBlogAsync();
             return View(result);
         }
     }
