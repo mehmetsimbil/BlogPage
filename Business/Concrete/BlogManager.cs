@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.ViewModel;
 using DataAccess.Abstract;
 using DataAccess.UnitOfWork;
 using Entities.Concrete;
@@ -18,10 +19,31 @@ namespace Business.Concrete
             _unitOfWork = unitOfWork;
         }
 
+        public async Task AddAsync(BlogAddModel blogAddModel)
+        {
+            if(!string.IsNullOrEmpty(blogAddModel.Title) || !string.IsNullOrEmpty(blogAddModel.Description))
+            {
+                var data = new Blog();
+                data.Title = blogAddModel.Title;
+                data.Detail = blogAddModel.Description;
+                data.CategoryId = 1;
+                data.Status = true;
+                data.IsDeleted = false;
+                data.CreatedTime= DateTime.Now;
+                data.LastUpdatedTime= DateTime.Now;
+
+                await _unitOfWork.BlogDal.AddAsync(data);
+                _unitOfWork.Complete();
+            }
+            
+            
+        }
+
         public async Task<List<Blog>> GetAllBlogAsync()
         {
             var result=await _unitOfWork.BlogDal.GetAllAsync();
             return result;
         }
+
     }
 }

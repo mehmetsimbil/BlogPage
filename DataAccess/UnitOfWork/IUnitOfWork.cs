@@ -12,6 +12,7 @@ namespace DataAccess.UnitOfWork
     {
         public IBlogDal BlogDal { get; }
         public ICategoryDal CategoryDal { get; }
+        public IPictureDal PictureDal { get; }
         int Complete();
     }
 }

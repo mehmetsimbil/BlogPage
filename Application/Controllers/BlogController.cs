@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Controllers
@@ -15,5 +16,20 @@ namespace Application.Controllers
             var result= await _blogService.GetAllBlogAsync();
             return View(result);
         }
+
+        [HttpPost]
+        public async Task<ActionResult> BlogAdd(BlogAddModel blogAddModel)
+        {
+            await _blogService.AddAsync(blogAddModel);
+            return RedirectToAction("Index", "Blog");
+            
+        }
+        [HttpGet]
+        public async Task<ActionResult> BlogAdd()
+        {
+
+            return View();
+        }
+
     }
 }

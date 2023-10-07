@@ -16,6 +16,7 @@ namespace Business.Extensions
     options.UseSqlServer(configuration.GetConnectionString("BlogConnectionString")));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IBlogService, BlogManager>();
+            services.AddScoped<ICategoryService, CategoryManager>();
         }
     }
 }

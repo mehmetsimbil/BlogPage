@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Business.ViewModel;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace Business.Abstract
     public interface IBlogService
     {
         Task<List<Blog>> GetAllBlogAsync();
+        Task AddAsync(BlogAddModel blogAddModel);
     }
 }

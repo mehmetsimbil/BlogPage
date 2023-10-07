@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Abstract
+namespace Business.Abstract
 {
-    public interface ICategoryDal : IRepository<Category>
+    public interface ICategoryService
     {
+        Task<List<Category>> GetAllCategoryAsync();
     }
 }

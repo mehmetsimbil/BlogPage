@@ -18,11 +18,14 @@ namespace DataAccess.UnitOfWork
             _blogContext = blogContext;
             BlogDal = new BlogDal(_blogContext);
             CategoryDal = new CategoryDal(_blogContext);
+            PictureDal = new PictureDal(_blogContext);
 
         }
         public IBlogDal BlogDal { get; private set; }
 
         public ICategoryDal CategoryDal { get; private set; }
+        public IPictureDal PictureDal { get;private set; }
+
 
         public int Complete()
         {
