@@ -1946,23 +1946,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fatiheren.kinay\\.nuget\\packages\\": {},
+    "C:\\Users\\dell\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fatiheren.kinay\\Source\\Repos\\BlogPage\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\dell\\source\\repos\\BlogPage\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\fatiheren.kinay\\Source\\Repos\\BlogPage\\Business\\Business.csproj",
-      "packagesPath": "C:\\Users\\fatiheren.kinay\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fatiheren.kinay\\Source\\Repos\\BlogPage\\Business\\obj\\",
+      "projectPath": "C:\\Users\\dell\\source\\repos\\BlogPage\\Business\\Business.csproj",
+      "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dell\\Source\\Repos\\BlogPage\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\fatiheren.kinay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1972,18 +1972,17 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://azuredevops.fineksus.local/PayGate/_packaging/fineksus-feed/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\fatiheren.kinay\\Source\\Repos\\BlogPage\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\fatiheren.kinay\\Source\\Repos\\BlogPage\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\dell\\source\\repos\\BlogPage\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\dell\\source\\repos\\BlogPage\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\fatiheren.kinay\\Source\\Repos\\BlogPage\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\fatiheren.kinay\\Source\\Repos\\BlogPage\\Entities\\Entities.csproj"
+            "C:\\Users\\dell\\source\\repos\\BlogPage\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\dell\\source\\repos\\BlogPage\\Entities\\Entities.csproj"
             }
           }
         }
@@ -2013,7 +2012,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

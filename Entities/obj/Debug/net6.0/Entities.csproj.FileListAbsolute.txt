@@ -10,3 +10,14 @@ C:\Users\fatiheren.kinay\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\Entitie
 C:\Users\fatiheren.kinay\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\refint\Entities.dll
 C:\Users\fatiheren.kinay\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\Entities.pdb
 C:\Users\fatiheren.kinay\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\dell\Source\Repos\BlogPage\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\dell\Source\Repos\BlogPage\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\dell\Source\Repos\BlogPage\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\dell\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\dell\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\dell\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\dell\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\dell\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\dell\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\dell\Source\Repos\BlogPage\Entities\obj\Debug\net6.0\ref\Entities.dll
