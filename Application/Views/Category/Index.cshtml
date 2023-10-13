@@ -1,0 +1,48 @@
+﻿@using Entities.Concrete
+@model List<Category>
+@{
+    Layout="_Layout";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">İD</th>
+            <th scope="col">Category Name</th>
+            <th scope="col">Oluşturulma Zamanı</th>
+            <th scope="col">Silinme Durumu</th>
+            <th scope="col">Status</th>
+            <th scope="col">Son Güncelleme</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <th scope="row" style="color:blue">
+                    @item.Id
+                </th>
+                <th scope="row" style="color:blue">
+                    @item.CategoryName
+                </th>
+                <th scope="row" style="color:blue">
+                    @item.CreatedTime
+                </th>
+                <th scope="row" style="color:blue">
+                    @item.IsDeleted
+                </th>
+                <th scope="row" style="color:blue">
+                    @item.Status
+                </th>
+                <th scope="row" style="color:blue">
+                    @item.LastUpdatedTime
+                      
+                </th>
+                
+
+            </tr>
+        }
+    </tbody>
+</table>

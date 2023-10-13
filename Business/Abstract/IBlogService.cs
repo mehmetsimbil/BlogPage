@@ -1,5 +1,6 @@
 ﻿using Business.ViewModel;
 using Entities.Concrete;
+using Entities.Dto_s;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,6 @@ namespace Business.Abstract
     {
         Task<List<Blog>> GetAllBlogAsync();
         Task AddAsync(BlogAddModel blogAddModel);
+        Task<List<BlogWithCategoriesDto>> GetAllBlogWithCategoryAsync();
     }
 }

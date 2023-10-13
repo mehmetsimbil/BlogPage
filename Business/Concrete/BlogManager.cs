@@ -3,6 +3,7 @@ using Business.ViewModel;
 using DataAccess.Abstract;
 using DataAccess.UnitOfWork;
 using Entities.Concrete;
+using Entities.Dto_s;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,7 @@ namespace Business.Concrete
                 var data = new Blog();
                 data.Title = blogAddModel.Title;
                 data.Detail = blogAddModel.Description;
-                data.CategoryId = 1;
+                data.CategoryId = blogAddModel.CategoryId;
                 data.Status = true;
                 data.IsDeleted = false;
                 data.CreatedTime= DateTime.Now;
@@ -42,8 +43,18 @@ namespace Business.Concrete
         public async Task<List<Blog>> GetAllBlogAsync()
         {
             var result=await _unitOfWork.BlogDal.GetAllAsync();
+            foreach(var item in  result)
+            {
+                item.LastUpdatedTime= item.LastUpdatedTime==null? DateTime.Now:item.LastUpdatedTime;
+            }
             return result;
         }
 
+        public async Task<List<BlogWithCategoriesDto>> GetAllBlogWithCategoryAsync()
+        {
+            var result =await _unitOfWork.BlogDal.GetAllBlogWithCategoryAsync();
+            return result;
+            
+        }
     }
 }
